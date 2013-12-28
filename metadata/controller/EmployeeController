@@ -1,0 +1,94 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "EmployeeController"
+    },
+    "designerId": "6d7f51e0-8213-419a-b1df-2a8b2161a68e",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "employeeFormPanel",
+                "selector": "formpanel#employeeFormPanel"
+            },
+            "designerId": "d594279f-958e-4358-86df-6bfb548bc73a"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "employeeNavitationView",
+                "selector": "navigationview#employeeNavitationView"
+            },
+            "designerId": "47bc292c-3359-4a49-b785-b5cb4be00cbc"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "button#employeeRefreshButton",
+                "designer|targetType": "Ext.Button",
+                "fn": "onEmployeeRefreshButtonTap",
+                "implHandler": [
+                    "alert('Employee Title');"
+                ],
+                "name": "tap"
+            },
+            "designerId": "805601e8-fd59-4bac-a191-afc30186de9e"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "button#employeeAddButton",
+                "designer|targetType": "Ext.Button",
+                "fn": "onEmployeeAddButtonTap",
+                "implHandler": [
+                    "alert('add button');"
+                ],
+                "name": "tap"
+            },
+            "designerId": "60223c27-d675-4bec-b4ad-3cf9623d8b44"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "button#employeeTrashButton",
+                "designer|targetType": "Ext.Button",
+                "fn": "onEmployeeTrashButtonTap",
+                "implHandler": [
+                    "alert('employee trash');"
+                ],
+                "name": "tap"
+            },
+            "designerId": "6d9fd6de-db23-4b66-9bfc-0f3506bb1762"
+        }
+    ]
+}

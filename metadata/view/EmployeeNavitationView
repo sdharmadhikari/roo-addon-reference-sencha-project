@@ -1,0 +1,84 @@
+{
+    "type": "Ext.navigation.View",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "employeeNavitationView",
+        "designer|userClassName": "EmployeeNavitationView",
+        "itemId": "employeeNavitationView"
+    },
+    "designerId": "21c235fc-1a19-4125-b51a-3119643a7668",
+    "cn": [
+        {
+            "type": "Ext.navigation.Bar",
+            "reference": {
+                "name": "navigationBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top"
+            },
+            "designerId": "a36292a5-851c-42ca-827c-6aca6eb38e1e",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "refresh",
+                        "itemId": "employeeRefreshButton",
+                        "text": ""
+                    },
+                    "designerId": "253fc52f-f351-4647-bb77-f43ecd9c54e8"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "right",
+                        "iconCls": "add",
+                        "itemId": "employeeAddButton",
+                        "text": null
+                    },
+                    "designerId": "7ae6095f-1f51-461b-bde6-df22ce6d71f9"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "right",
+                        "iconCls": "trash",
+                        "itemId": "employeeTrashButton",
+                        "text": null
+                    },
+                    "designerId": "791f8a9a-7eb4-4858-a286-ff924e442548"
+                }
+            ]
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "beb140d2-a705-4ee0-bb58-c850e2aa8789",
+            "masterInstanceId": "e40fe467-c19b-4b74-8e10-171f6769bb1e"
+        }
+    ]
+}

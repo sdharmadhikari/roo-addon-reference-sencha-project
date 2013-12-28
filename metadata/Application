@@ -1,0 +1,27 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "controllers": [
+            "EmployeeController"
+        ],
+        "models": [
+            "Employee"
+        ],
+        "name": "SenchaCrud",
+        "stores": [
+            "EmployeeJsonPStore"
+        ],
+        "views": [
+            "MainView",
+            "EmployeeNavitationView",
+            "EmployeeFormPanel",
+            "EmployeeList"
+        ]
+    },
+    "designerId": "application"
+}

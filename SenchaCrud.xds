@@ -1,0 +1,60 @@
+{
+    "name": "SenchaCrud",
+    "settings": {
+        "cmd": {
+            "license": "gpl",
+            "cmdVersion": "4.0.1.45",
+            "frameworkVersion": "2.3.0.328"
+        },
+        "canvasControls": {
+            "viewportSize": {
+                "name": "iPhone 5",
+                "builtIn": true,
+                "height": 568,
+                "width": 320
+            },
+            "viewportOrientation": "portrait"
+        },
+        "urlPrefix": "",
+        "exportPath": "",
+        "spacesToIndent": 4,
+        "sdkPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "lastBuildSelection": {
+            "value": "webBuild",
+            "display": "Build web app"
+        }
+    },
+    "xdsVersion": "3.0.1",
+    "xdsBuild": 1343,
+    "schemaVersion": 1,
+    "upgradeVersion": 300000000004,
+    "framework": "touch23",
+    "viewOrderMap": {
+        "view": [
+            "6ff421e4-b183-4a75-a035-b579678217fa",
+            "21c235fc-1a19-4125-b51a-3119643a7668",
+            "de9d06e7-7061-44e9-85a8-3f0ae2d93474",
+            "e40fe467-c19b-4b74-8e10-171f6769bb1e"
+        ],
+        "store": [
+            "57c138b8-3342-4ad4-a9bc-30aa28923e1d"
+        ],
+        "controller": [
+            "6d7f51e0-8213-419a-b1df-2a8b2161a68e"
+        ],
+        "model": [
+            "a4f30cb6-cd23-408f-90e7-ec00247bfe92"
+        ],
+        "resource": [
+            "70760bbc-9363-4de6-bb8d-935eb11d0b3e"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

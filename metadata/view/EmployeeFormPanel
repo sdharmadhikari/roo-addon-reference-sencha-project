@@ -1,0 +1,74 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "employeeFormPanel",
+        "designer|userClassName": "EmployeeFormPanel",
+        "itemId": "employeeFormPanel"
+    },
+    "designerId": "de9d06e7-7061-44e9-85a8-3f0ae2d93474",
+    "cn": [
+        {
+            "type": "Ext.form.FieldSet",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "FirstNameFieldSet",
+                "title": ""
+            },
+            "designerId": "8302febc-9214-493d-9af2-c0358999b53d",
+            "cn": [
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "firstname",
+                        "label": "First Name",
+                        "labelWidth": "40%"
+                    },
+                    "designerId": "cb4f00c1-b786-42a2-a65b-2e1e6c445916"
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.FieldSet",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "LastNameFieldSet",
+                "title": ""
+            },
+            "designerId": "f781c77e-f53d-4581-9241-390883d8e3bc",
+            "cn": [
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "lastname",
+                        "label": "Last Name",
+                        "labelWidth": "40%"
+                    },
+                    "designerId": "6164f28d-aaaf-45a2-b7a4-74296b00b273"
+                }
+            ]
+        }
+    ]
+}

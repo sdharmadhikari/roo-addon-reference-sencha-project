@@ -1,0 +1,40 @@
+{
+    "type": "jsonpstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "designer|userClassName": "EmployeeJsonPStore",
+        "model": "Employee",
+        "storeId": "EmployeeJsonPStore"
+    },
+    "designerId": "57c138b8-3342-4ad4-a9bc-30aa28923e1d",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Rest",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "http://localhost:8080/seleroo/employees"
+            },
+            "designerId": "f82b29f8-0327-4b29-9651-66742d74b6de",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "29bbcda9-ca33-4211-8693-04940b34ade0"
+                }
+            ]
+        }
+    ]
+}

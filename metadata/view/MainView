@@ -1,0 +1,59 @@
+{
+    "type": "Ext.tab.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "designer|userClassName": "MainView",
+        "itemId": "mainView"
+    },
+    "designerId": "6ff421e4-b183-4a75-a035-b579678217fa",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "iconCls": "info",
+                "itemId": "employees",
+                "layout": "fit",
+                "title": "Employees"
+            },
+            "designerId": "11683103-9560-4063-a3c4-5e9b28a5f36c",
+            "cn": [
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": null
+                    },
+                    "designerId": "d3f8818e-fd33-4214-98a2-0df30fc5f45b",
+                    "masterInstanceId": "21c235fc-1a19-4125-b51a-3119643a7668"
+                }
+            ]
+        },
+        {
+            "type": "Ext.tab.Bar",
+            "reference": {
+                "name": "tabBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "bottom",
+                "scrollable": true
+            },
+            "designerId": "0f6d7455-4eb4-44c1-a92f-9b9629ad1cc1"
+        }
+    ]
+}

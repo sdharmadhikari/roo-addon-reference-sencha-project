@@ -1,0 +1,32 @@
+{
+    "type": "Ext.dataview.List",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "employeeList",
+        "designer|userClassName": "EmployeeList",
+        "itemId": "employeeList",
+        "store": "EmployeeJsonPStore"
+    },
+    "designerId": "e40fe467-c19b-4b74-8e10-171f6769bb1e",
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "itemTpl",
+                "implHandler": [
+                    "<div>firstName {firstName}</div>"
+                ]
+            },
+            "designerId": "21c3d24b-f4dd-4e91-ae2c-4dd47be5c043"
+        }
+    ]
+}

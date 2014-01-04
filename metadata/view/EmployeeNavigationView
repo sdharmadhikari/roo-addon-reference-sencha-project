@@ -6,9 +6,9 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userAlias": "employeeNavitationView",
-        "designer|userClassName": "EmployeeNavitationView",
-        "itemId": "employeeNavitationView"
+        "designer|userAlias": "employeeNavigationView",
+        "designer|userClassName": "EmployeeNavigationView",
+        "itemId": "employeeNavigationView"
     },
     "designerId": "21c235fc-1a19-4125-b51a-3119643a7668",
     "cn": [

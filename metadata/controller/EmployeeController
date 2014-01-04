@@ -11,32 +11,6 @@
     "designerId": "6d7f51e0-8213-419a-b1df-2a8b2161a68e",
     "cn": [
         {
-            "type": "controllerref",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "ref": "employeeFormPanel",
-                "selector": "formpanel#employeeFormPanel"
-            },
-            "designerId": "d594279f-958e-4358-86df-6bfb548bc73a"
-        },
-        {
-            "type": "controllerref",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "ref": "employeeNavitationView",
-                "selector": "navigationview#employeeNavitationView"
-            },
-            "designerId": "47bc292c-3359-4a49-b785-b5cb4be00cbc"
-        },
-        {
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -66,7 +40,16 @@
                 "designer|targetType": "Ext.Button",
                 "fn": "onEmployeeAddButtonTap",
                 "implHandler": [
-                    "alert('add button');"
+                    "// Get References",
+                    "var employeeNavigationView = this.getEmployeeNavigationView();",
+                    "var employeeFormPanel = this.getEmployeeFormPanel();",
+                    "",
+                    "",
+                    "// Application Logic",
+                    "",
+                    "employeeNavigationView.push(employeeFormPanel);",
+                    "",
+                    ""
                 ],
                 "name": "tap"
             },
@@ -89,6 +72,36 @@
                 "name": "tap"
             },
             "designerId": "6d9fd6de-db23-4b66-9bfc-0f3506bb1762"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoCreate": true,
+                "ref": "employeeNavigationView",
+                "selector": "navigationview#employeeNavigationView",
+                "xtype": "employeeNavigationView"
+            },
+            "designerId": "f9745d7d-d9b5-4cfb-a738-4d4cfaf02d70"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoCreate": true,
+                "ref": "employeeFormPanel",
+                "selector": "formpanel#employeeFormPanel",
+                "xtype": "employeeFormPanel"
+            },
+            "designerId": "06e2be02-d527-4d64-bd38-06910c75a3a7"
         }
     ]
 }

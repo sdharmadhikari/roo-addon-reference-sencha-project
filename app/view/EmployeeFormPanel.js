@@ -19,7 +19,8 @@ Ext.define('SenchaCrud.view.EmployeeFormPanel', {
 
     requires: [
         'Ext.form.FieldSet',
-        'Ext.field.Text'
+        'Ext.field.Text',
+        'Ext.Button'
     ],
 
     config: {
@@ -27,29 +28,20 @@ Ext.define('SenchaCrud.view.EmployeeFormPanel', {
         items: [
             {
                 xtype: 'fieldset',
-                itemId: 'FirstNameFieldSet',
-                title: '',
+                title: 'attributeName',
                 items: [
                     {
                         xtype: 'textfield',
-                        itemId: 'firstname',
-                        label: 'First Name',
+                        label: 'attrName',
                         labelWidth: '40%'
                     }
                 ]
             },
             {
-                xtype: 'fieldset',
-                itemId: 'LastNameFieldSet',
-                title: '',
-                items: [
-                    {
-                        xtype: 'textfield',
-                        itemId: 'lastname',
-                        label: 'Last Name',
-                        labelWidth: '40%'
-                    }
-                ]
+                xtype: 'button',
+                itemId: 'employeeSaveButton',
+                ui: 'confirm',
+                text: 'Save'
             }
         ]
     }

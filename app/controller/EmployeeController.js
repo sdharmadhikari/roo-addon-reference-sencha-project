@@ -18,8 +18,16 @@ Ext.define('SenchaCrud.controller.EmployeeController', {
 
     config: {
         refs: {
-            employeeFormPanel: 'formpanel#employeeFormPanel',
-            employeeNavitationView: 'navigationview#employeeNavitationView'
+            employeeNavigationView: {
+                autoCreate: true,
+                selector: 'navigationview#employeeNavigationView',
+                xtype: 'employeeNavigationView'
+            },
+            employeeFormPanel: {
+                autoCreate: true,
+                selector: 'formpanel#employeeFormPanel',
+                xtype: 'employeeFormPanel'
+            }
         },
 
         control: {
@@ -40,7 +48,16 @@ Ext.define('SenchaCrud.controller.EmployeeController', {
     },
 
     onEmployeeAddButtonTap: function(button, e, eOpts) {
-        alert('add button');
+        // Get References
+        var employeeNavigationView = this.getEmployeeNavigationView();
+        var employeeFormPanel = this.getEmployeeFormPanel();
+
+
+        // Application Logic
+
+        employeeNavigationView.push(employeeFormPanel);
+
+
     },
 
     onEmployeeTrashButtonTap: function(button, e, eOpts) {

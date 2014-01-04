@@ -18,9 +18,9 @@
         ],
         "views": [
             "MainView",
-            "EmployeeNavitationView",
-            "EmployeeFormPanel",
-            "EmployeeList"
+            "EmployeeNavigationView",
+            "EmployeeList",
+            "EmployeeFormPanel"
         ]
     },
     "designerId": "application"

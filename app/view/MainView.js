@@ -17,7 +17,7 @@ Ext.define('SenchaCrud.view.MainView', {
     extend: 'Ext.tab.Panel',
 
     requires: [
-        'SenchaCrud.view.EmployeeNavitationView',
+        'SenchaCrud.view.EmployeeNavigationView',
         'Ext.navigation.View',
         'Ext.tab.Bar'
     ],
@@ -33,7 +33,7 @@ Ext.define('SenchaCrud.view.MainView', {
                 layout: 'fit',
                 items: [
                     {
-                        xtype: 'employeeNavitationView'
+                        xtype: 'employeeNavigationView'
                     }
                 ]
             }

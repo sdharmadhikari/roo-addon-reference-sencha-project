@@ -28,9 +28,9 @@ Ext.application({
     ],
     views: [
         'MainView',
-        'EmployeeNavitationView',
-        'EmployeeFormPanel',
-        'EmployeeList'
+        'EmployeeNavigationView',
+        'EmployeeList',
+        'EmployeeFormPanel'
     ],
     controllers: [
         'EmployeeController'

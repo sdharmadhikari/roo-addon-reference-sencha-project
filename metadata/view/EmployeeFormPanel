@@ -20,9 +20,18 @@
             },
             "codeClass": null,
             "userConfig": {
-                "title": "attributeName"
+                "itemId": "attrNameFieldSetItemId",
+                "name": null,
+                "title": null
             },
             "designerId": "fd85f018-5f4b-43fa-8df3-26f5b41aa92e",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "name",
+                    "type": "string"
+                }
+            ],
             "cn": [
                 {
                     "type": "Ext.field.Text",
@@ -33,27 +42,43 @@
                     "codeClass": null,
                     "userConfig": {
                         "label": "attrName",
-                        "labelWidth": "40%"
+                        "labelWidth": "40%",
+                        "name": "attrName"
                     },
                     "designerId": "19d74549-0723-482a-bb78-005ceef58da4"
                 }
             ]
         },
         {
-            "type": "Ext.Button",
+            "type": "Ext.form.FieldSet",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|uiInterfaceName": "confirm",
-                "iconCls": null,
-                "itemId": "employeeSaveButton",
-                "text": "Save",
-                "ui": "confirm"
+                "itemId": "employeeSaveFieldSetItemId",
+                "title": null
             },
-            "designerId": "572b295b-2efe-4bd8-98b3-3418e4b028c8"
+            "designerId": "7cb0ba1c-8f68-445b-af37-5974a312532a",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|uiInterfaceName": "confirm",
+                        "iconCls": null,
+                        "itemId": "employeeSaveButton",
+                        "text": "Save",
+                        "ui": "confirm"
+                    },
+                    "designerId": "572b295b-2efe-4bd8-98b3-3418e4b028c8"
+                }
+            ]
         }
     ]
 }

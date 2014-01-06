@@ -37,6 +37,10 @@ Ext.application({
     ],
     name: 'SenchaCrud',
 
+    getGenericServerMessage: function() {
+        return "Connectivity Error, try again later.";
+    },
+
     launch: function() {
 
         Ext.create('SenchaCrud.view.MainView', {fullscreen: true});

@@ -46,6 +46,9 @@
                     "",
                     "",
                     "// Application Logic",
+                    "var record = Ext.create('SenchaCrud.model.Employee');",
+                    "record.set('attrName','sudhir');",
+                    "employeeFormPanel.setRecord(record);",
                     "",
                     "employeeNavigationView.push(employeeFormPanel);",
                     "",
@@ -102,6 +105,40 @@
                 "xtype": "employeeFormPanel"
             },
             "designerId": "06e2be02-d527-4d64-bd38-06910c75a3a7"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "button#employeeSaveButton",
+                "designer|targetType": "Ext.Button",
+                "fn": "onEmployeeAddSaveButtonTap",
+                "implHandler": [
+                    "// Get References",
+                    "",
+                    "var employeeFormPanel = this.getEmployeeFormPanel();",
+                    "",
+                    "var employee = employeeFormPanel.getRecord();",
+                    "",
+                    "",
+                    "employeeFormPanel.updateRecord(employee);",
+                    "",
+                    "var operation = {};",
+                    "//operation.success = this.employeeSave;",
+                    "operation.failure = function() {",
+                    "    Ext.Msg.alert(MyApp.app.getServerErrorMessage(),'',Ext.emptyFn);",
+                    "    //Ext.Viewport.setMasked(false);",
+                    "return;};",
+                    "employee.set('id',0);",
+                    "employee.save(operation);"
+                ],
+                "name": "tap"
+            },
+            "designerId": "9bd48abc-9620-44fa-b9be-59cfbab7968c"
         }
     ]
 }

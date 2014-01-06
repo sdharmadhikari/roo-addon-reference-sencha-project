@@ -33,6 +33,21 @@
                 "name": "lastName"
             },
             "designerId": "f08e2b08-4144-49f6-9a95-cb960c46330b"
+        },
+        {
+            "type": "Ext.data.proxy.Rest",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "headers": [
+                    "{'Accept' : 'application/json'}"
+                ],
+                "url": "http://localhost:8080/seleroo/employees"
+            },
+            "designerId": "12b2f267-abf1-4aee-8eca-4a186b2dd747"
         }
     ]
 }

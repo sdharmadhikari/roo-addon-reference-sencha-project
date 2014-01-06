@@ -39,6 +39,9 @@ Ext.define('SenchaCrud.controller.EmployeeController', {
             },
             "button#employeeTrashButton": {
                 tap: 'onEmployeeTrashButtonTap'
+            },
+            "button#employeeSaveButton": {
+                tap: 'onEmployeeAddSaveButtonTap'
             }
         }
     },
@@ -54,6 +57,9 @@ Ext.define('SenchaCrud.controller.EmployeeController', {
 
 
         // Application Logic
+        var record = Ext.create('SenchaCrud.model.Employee');
+        record.set('attrName','sudhir');
+        employeeFormPanel.setRecord(record);
 
         employeeNavigationView.push(employeeFormPanel);
 
@@ -62,6 +68,26 @@ Ext.define('SenchaCrud.controller.EmployeeController', {
 
     onEmployeeTrashButtonTap: function(button, e, eOpts) {
         alert('employee trash');
+    },
+
+    onEmployeeAddSaveButtonTap: function(button, e, eOpts) {
+        // Get References
+
+        var employeeFormPanel = this.getEmployeeFormPanel();
+
+        var employee = employeeFormPanel.getRecord();
+
+
+        employeeFormPanel.updateRecord(employee);
+
+        var operation = {};
+        //operation.success = this.employeeSave;
+        operation.failure = function() {
+            Ext.Msg.alert(MyApp.app.getServerErrorMessage(),'',Ext.emptyFn);
+            //Ext.Viewport.setMasked(false);
+        return;};
+        employee.set('id',0);
+        employee.save(operation);
     }
 
 });

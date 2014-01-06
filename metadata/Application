@@ -23,5 +23,22 @@
             "EmployeeFormPanel"
         ]
     },
-    "designerId": "application"
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "getGenericServerMessage",
+                "implHandler": [
+                    "return \"Connectivity Error, try again later.\";"
+                ]
+            },
+            "designerId": "3e57c67b-0d01-4c73-a25c-93a083714011"
+        }
+    ]
 }

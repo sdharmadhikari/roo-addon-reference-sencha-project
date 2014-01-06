@@ -83,10 +83,12 @@ Ext.define('SenchaCrud.controller.EmployeeController', {
         var operation = {};
         //operation.success = this.employeeSave;
         operation.failure = function() {
-            Ext.Msg.alert(MyApp.app.getServerErrorMessage(),'',Ext.emptyFn);
+            Ext.Msg.alert(SenchaCrud.app.getGenericServerMessage(),'',Ext.emptyFn);
             //Ext.Viewport.setMasked(false);
         return;};
-        employee.set('id',0);
+        employee.set('id',0);// 0 Represents dummy id, otherwise
+        //Sencha uses something like ext-* which fails on Roo server
+        //side because its not integer.
         employee.save(operation);
     }
 

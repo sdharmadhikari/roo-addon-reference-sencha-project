@@ -13,6 +13,9 @@
             "Employee"
         ],
         "name": "SenchaCrud",
+        "requires": [
+            "Ext.MessageBox"
+        ],
         "stores": [
             "EmployeeJsonPStore"
         ],

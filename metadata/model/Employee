@@ -11,30 +11,6 @@
     "designerId": "a4f30cb6-cd23-408f-90e7-ec00247bfe92",
     "cn": [
         {
-            "type": "Ext.data.Field",
-            "reference": {
-                "name": "fields",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "name": "firstName"
-            },
-            "designerId": "bed7a6e9-89bc-45aa-b673-5044b6c13959"
-        },
-        {
-            "type": "Ext.data.Field",
-            "reference": {
-                "name": "fields",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "name": "lastName"
-            },
-            "designerId": "f08e2b08-4144-49f6-9a95-cb960c46330b"
-        },
-        {
             "type": "Ext.data.proxy.Rest",
             "reference": {
                 "name": "proxy",
@@ -48,6 +24,18 @@
                 "url": "http://localhost:8080/seleroo/employees"
             },
             "designerId": "12b2f267-abf1-4aee-8eca-4a186b2dd747"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "attrName"
+            },
+            "designerId": "500c2ecd-c82e-4619-92c7-23efe5bdff6a"
         }
     ]
 }

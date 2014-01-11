@@ -755,10 +755,10 @@ Ext.ClassManager.addNameAlternateMappings({
   ],
   "SenchaCrud.controller.EmployeeController": [],
   "SenchaCrud.model.Employee": [],
-  "SenchaCrud.store.EmlpoyeeJsonStore": [],
-  "SenchaCrud.store.MyJsonPStore": [],
+  "SenchaCrud.store.EmployeeJsonPStore": [],
   "SenchaCrud.view.EmployeeFormPanel": [],
-  "SenchaCrud.view.EmployeesNavitationView": [],
+  "SenchaCrud.view.EmployeeList": [],
+  "SenchaCrud.view.EmployeeNavigationView": [],
   "SenchaCrud.view.Main": [],
   "SenchaCrud.view.MainView": []
 });
@@ -1710,10 +1710,16 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.viewport.WindowsPhone": [],
   "SenchaCrud.controller.EmployeeController": [],
   "SenchaCrud.model.Employee": [],
-  "SenchaCrud.store.EmlpoyeeJsonStore": [],
-  "SenchaCrud.store.MyJsonPStore": [],
-  "SenchaCrud.view.EmployeeFormPanel": [],
-  "SenchaCrud.view.EmployeesNavitationView": [],
+  "SenchaCrud.store.EmployeeJsonPStore": [],
+  "SenchaCrud.view.EmployeeFormPanel": [
+    "widget.employeeFormPanel"
+  ],
+  "SenchaCrud.view.EmployeeList": [
+    "widget.employeeList"
+  ],
+  "SenchaCrud.view.EmployeeNavigationView": [
+    "widget.employeeNavigationView"
+  ],
   "SenchaCrud.view.Main": [
     "widget.main"
   ],

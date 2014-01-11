@@ -17,25 +17,22 @@ Ext.define('SenchaCrud.model.Employee', {
     extend: 'Ext.data.Model',
 
     requires: [
-        'Ext.data.Field',
-        'Ext.data.proxy.Rest'
+        'Ext.data.proxy.Rest',
+        'Ext.data.Field'
     ],
 
     config: {
-        fields: [
-            {
-                name: 'firstName'
-            },
-            {
-                name: 'lastName'
-            }
-        ],
         proxy: {
             type: 'rest',
             url: 'http://localhost:8080/seleroo/employees',
             headers: {
                 Accept: 'application/json'
             }
-        }
+        },
+        fields: [
+            {
+                name: 'attrName'
+            }
+        ]
     }
 });

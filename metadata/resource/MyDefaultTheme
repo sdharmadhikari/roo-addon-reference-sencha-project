@@ -1,0 +1,28 @@
+{
+    "type": "defaultthemeresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyDefaultTheme"
+    },
+    "designerId": "99605110-e94e-4979-b885-7a209c428f8d",
+    "storage": {
+        "needsCompile": false,
+        "simple": {},
+        "nameIndex": 1,
+        "varData": {
+            "Ext.Class": {
+                "globalVars": [
+                    {
+                        "name": "base-color",
+                        "enabled": true,
+                        "value": "rgba(208,68,25,1)"
+                    }
+                ]
+            }
+        }
+    }
+}

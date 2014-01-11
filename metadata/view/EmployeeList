@@ -23,7 +23,7 @@
             "userConfig": {
                 "designer|displayName": "itemTpl",
                 "implHandler": [
-                    "<div>firstName {firstName}</div>"
+                    "<div>attrName {attrName}</div>"
                 ]
             },
             "designerId": "21c3d24b-f4dd-4e91-ae2c-4dd47be5c043"

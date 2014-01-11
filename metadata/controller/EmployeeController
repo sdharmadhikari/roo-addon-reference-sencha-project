@@ -22,7 +22,10 @@
                 "designer|targetType": "Ext.Button",
                 "fn": "onEmployeeRefreshButtonTap",
                 "implHandler": [
-                    "alert('Employee Title');"
+                    "var employeeJsonPStore = Ext.getStore('EmployeeJsonPStore');",
+                    "",
+                    "",
+                    "employeeJsonPStore.load();"
                 ],
                 "name": "tap"
             },
@@ -120,7 +123,9 @@
                 "implHandler": [
                     "// Get References",
                     "",
+                    "var employeeNavigationView = this.getEmployeeNavigationView();",
                     "var employeeFormPanel = this.getEmployeeFormPanel();",
+                    "var employeeList = this.getEmployeeList();",
                     "",
                     "var employee = employeeFormPanel.getRecord();",
                     "",
@@ -133,14 +138,31 @@
                     "    Ext.Msg.alert(SenchaCrud.app.getGenericServerMessage(),'',Ext.emptyFn);",
                     "    //Ext.Viewport.setMasked(false);",
                     "return;};",
-                    "employee.set('id',0);// 0 Represents dummy id, otherwise ",
-                    "//Sencha uses something like ext-* which fails on Roo server ",
+                    "employee.set('id',0);// 0 Represents dummy id, otherwise",
+                    "//Sencha uses something like ext-* which fails on Roo server",
                     "//side because its not integer.",
-                    "employee.save(operation);"
+                    "employee.save(operation);",
+                    "",
+                    "employeeNavigationView.pop();"
                 ],
                 "name": "tap"
             },
             "designerId": "9bd48abc-9620-44fa-b9be-59cfbab7968c"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoCreate": true,
+                "ref": "employeeList",
+                "selector": "list#employeeList",
+                "xtype": "employeeList"
+            },
+            "designerId": "df5c8ada-1f58-4c16-8122-1285cc1c4134"
         }
     ]
 }

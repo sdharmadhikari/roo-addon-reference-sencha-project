@@ -27,6 +27,11 @@ Ext.define('SenchaCrud.controller.EmployeeController', {
                 autoCreate: true,
                 selector: 'formpanel#employeeFormPanel',
                 xtype: 'employeeFormPanel'
+            },
+            employeeList: {
+                autoCreate: true,
+                selector: 'list#employeeList',
+                xtype: 'employeeList'
             }
         },
 
@@ -47,7 +52,10 @@ Ext.define('SenchaCrud.controller.EmployeeController', {
     },
 
     onEmployeeRefreshButtonTap: function(button, e, eOpts) {
-        alert('Employee Title');
+        var employeeJsonPStore = Ext.getStore('EmployeeJsonPStore');
+
+
+        employeeJsonPStore.load();
     },
 
     onEmployeeAddButtonTap: function(button, e, eOpts) {
@@ -73,7 +81,9 @@ Ext.define('SenchaCrud.controller.EmployeeController', {
     onEmployeeAddSaveButtonTap: function(button, e, eOpts) {
         // Get References
 
+        var employeeNavigationView = this.getEmployeeNavigationView();
         var employeeFormPanel = this.getEmployeeFormPanel();
+        var employeeList = this.getEmployeeList();
 
         var employee = employeeFormPanel.getRecord();
 
@@ -90,6 +100,8 @@ Ext.define('SenchaCrud.controller.EmployeeController', {
         //Sencha uses something like ext-* which fails on Roo server
         //side because its not integer.
         employee.save(operation);
+
+        employeeNavigationView.pop();
     }
 
 });

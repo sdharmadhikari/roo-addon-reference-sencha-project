@@ -25,7 +25,7 @@ Ext.define('SenchaCrud.view.EmployeeList', {
         itemId: 'employeeList',
         store: 'EmployeeJsonPStore',
         itemTpl: [
-            '<div>firstName {firstName}</div>'
+            '<div>attrName {attrName}</div>'
         ]
     }
 

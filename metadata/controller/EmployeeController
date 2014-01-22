@@ -126,6 +126,7 @@
                     "var employeeNavigationView = this.getEmployeeNavigationView();",
                     "var employeeFormPanel = this.getEmployeeFormPanel();",
                     "var employeeList = this.getEmployeeList();",
+                    "var employeeJsonPStore = Ext.getStore('EmployeeJsonPStore');",
                     "",
                     "var employee = employeeFormPanel.getRecord();",
                     "",
@@ -142,6 +143,7 @@
                     "//Sencha uses something like ext-* which fails on Roo server",
                     "//side because its not integer.",
                     "employee.save(operation);",
+                    "employeeJsonPStore.load();",
                     "",
                     "employeeNavigationView.pop();"
                 ],

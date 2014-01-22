@@ -36,6 +36,18 @@
                 "name": "attrName"
             },
             "designerId": "500c2ecd-c82e-4619-92c7-23efe5bdff6a"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "version"
+            },
+            "designerId": "4af7de07-fe3e-48c6-b2e7-0c980b7ba5d8"
         }
     ]
 }

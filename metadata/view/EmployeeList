@@ -9,6 +9,7 @@
         "designer|userAlias": "employeeList",
         "designer|userClassName": "EmployeeList",
         "itemId": "employeeList",
+        "onItemDisclosure": true,
         "store": "EmployeeJsonPStore"
     },
     "designerId": "e40fe467-c19b-4b74-8e10-171f6769bb1e",

@@ -47,6 +47,9 @@ Ext.define('SenchaCrud.controller.EmployeeController', {
             },
             "button#employeeSaveButton": {
                 tap: 'onEmployeeAddSaveButtonTap'
+            },
+            "list#employeeList": {
+                itemtap: 'onEmployeeListItemTap'
             }
         }
     },
@@ -95,8 +98,7 @@ Ext.define('SenchaCrud.controller.EmployeeController', {
         //operation.success = this.employeeSave;
         operation.failure = function() {
             Ext.Msg.alert(SenchaCrud.app.getGenericServerMessage(),'',Ext.emptyFn);
-            //Ext.Viewport.setMasked(false);
-        return;};
+            return;};
         employee.set('id',0);// 0 Represents dummy id, otherwise
         //Sencha uses something like ext-* which fails on Roo server
         //side because its not integer.
@@ -104,6 +106,15 @@ Ext.define('SenchaCrud.controller.EmployeeController', {
         employeeJsonPStore.load();
 
         employeeNavigationView.pop();
+    },
+
+    onEmployeeListItemTap: function(dataview, index, target, record, e, eOpts) {
+        var employeeNavigationView = this.getEmployeeNavigationView();
+        var employeeFormPanel = this.getEmployeeFormPanel();
+
+        employeeFormPanel.setRecord(record);
+        employeeNavigationView.push(employeeFormPanel);
+
     }
 
 });

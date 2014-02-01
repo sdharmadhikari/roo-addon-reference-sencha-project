@@ -42,14 +42,14 @@ Ext.define('SenchaCrud.controller.EmployeeController', {
             "button#employeeAddButton": {
                 tap: 'onEmployeeAddButtonTap'
             },
-            "button#employeeTrashButton": {
-                tap: 'onEmployeeTrashButtonTap'
-            },
             "button#employeeSaveButton": {
                 tap: 'onEmployeeAddSaveButtonTap'
             },
             "list#employeeList": {
                 itemtap: 'onEmployeeListItemTap'
+            },
+            "button#employeeDeleteButton": {
+                tap: 'onEmployeeDeleteButtonTap'
             }
         }
     },
@@ -77,10 +77,6 @@ Ext.define('SenchaCrud.controller.EmployeeController', {
 
     },
 
-    onEmployeeTrashButtonTap: function(button, e, eOpts) {
-        alert('employee trash');
-    },
-
     onEmployeeAddSaveButtonTap: function(button, e, eOpts) {
         // Get References
 
@@ -103,7 +99,6 @@ Ext.define('SenchaCrud.controller.EmployeeController', {
         //Sencha uses something like ext-* which fails on Roo server
         //side because its not integer.
         employee.save(operation);
-        employeeJsonPStore.load();
 
         employeeNavigationView.pop();
     },
@@ -115,6 +110,27 @@ Ext.define('SenchaCrud.controller.EmployeeController', {
         employeeFormPanel.setRecord(record);
         employeeNavigationView.push(employeeFormPanel);
 
+    },
+
+    onEmployeeDeleteButtonTap: function(button, e, eOpts) {
+        alert('delete');
+        var employeeNavigationView = this.getEmployeeNavigationView();
+        var employeeFormPanel = this.getEmployeeFormPanel();
+        var employeeList = this.getEmployeeList();
+        var employeeJsonPStore = Ext.getStore('EmployeeJsonPStore');
+
+        var employee = employeeFormPanel.getRecord();
+
+
+        var operation = {};
+
+        operation.failure = function() {
+            Ext.Msg.alert(SenchaCrud.app.getGenericServerMessage(),'',Ext.emptyFn);
+            return;};
+
+        employee.erase(operation);
+
+        employeeNavigationView.pop();
     }
 
 });

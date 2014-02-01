@@ -52,21 +52,6 @@
                         "text": null
                     },
                     "designerId": "7ae6095f-1f51-461b-bde6-df22ce6d71f9"
-                },
-                {
-                    "type": "Ext.Button",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "align": "right",
-                        "iconCls": "trash",
-                        "itemId": "employeeTrashButton",
-                        "text": null
-                    },
-                    "designerId": "791f8a9a-7eb4-4858-a286-ff924e442548"
                 }
             ]
         },

@@ -70,13 +70,46 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|uiInterfaceName": "confirm",
-                        "iconCls": null,
+                        "designer|uiInterfaceName": "action",
+                        "iconAlign": null,
+                        "iconCls": "",
                         "itemId": "employeeSaveButton",
                         "text": "Save",
-                        "ui": "confirm"
+                        "ui": "action"
                     },
                     "designerId": "572b295b-2efe-4bd8-98b3-3418e4b028c8"
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.FieldSet",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "employeeDeleteFieldSetItemId",
+                "title": null
+            },
+            "designerId": "e72310ea-1011-40fa-9b32-05bab531b149",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|uiInterfaceName": "decline",
+                        "iconAlign": "center",
+                        "iconCls": "delete",
+                        "itemId": "employeeDeleteButton",
+                        "text": null,
+                        "ui": "decline"
+                    },
+                    "designerId": "d511216c-619a-4e08-9ddb-a2e50e284b9f"
                 }
             ]
         }

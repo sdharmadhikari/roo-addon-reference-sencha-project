@@ -113,7 +113,6 @@ Ext.define('SenchaCrud.controller.EmployeeController', {
     },
 
     onEmployeeDeleteButtonTap: function(button, e, eOpts) {
-        alert('delete');
         var employeeNavigationView = this.getEmployeeNavigationView();
         var employeeFormPanel = this.getEmployeeFormPanel();
         var employeeList = this.getEmployeeList();
@@ -128,9 +127,23 @@ Ext.define('SenchaCrud.controller.EmployeeController', {
             Ext.Msg.alert(SenchaCrud.app.getGenericServerMessage(),'',Ext.emptyFn);
             return;};
 
-        employee.erase(operation);
 
-        employeeNavigationView.pop();
+        Ext.Msg.confirm('', 'Delete?', function(buttonId,value,opt) {
+
+            if(buttonId === 'no') {
+
+                return;
+
+            }else{
+
+                employee.erase(operation);
+
+                employeeNavigationView.pop();
+
+            }
+        });
+
+
     }
 
 });

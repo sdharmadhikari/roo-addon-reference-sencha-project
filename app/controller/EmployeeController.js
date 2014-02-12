@@ -136,6 +136,7 @@ Ext.define('SenchaCrud.controller.EmployeeController', {
 
             }else{
 
+                employeeJsonPStore.remove(employee);
                 employee.erase(operation);
 
                 employeeNavigationView.pop();

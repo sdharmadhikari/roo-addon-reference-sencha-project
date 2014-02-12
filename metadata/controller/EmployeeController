@@ -204,6 +204,7 @@
                     "        ",
                     "    }else{",
                     "       ",
+                    "        employeeJsonPStore.remove(employee);",
                     "        employee.erase(operation);",
                     "        ",
                     "        employeeNavigationView.pop();        ",

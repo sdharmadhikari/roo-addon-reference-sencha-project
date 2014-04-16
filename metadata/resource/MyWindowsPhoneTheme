@@ -1,0 +1,18 @@
+{
+    "type": "wpthemeresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyWindowsPhoneTheme"
+    },
+    "designerId": "432b5d27-11dc-4ca7-a805-78a0c2e40b5f",
+    "storage": {
+        "needsCompile": false,
+        "simple": {},
+        "nameIndex": 1,
+        "varData": {}
+    }
+}

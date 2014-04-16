@@ -1,0 +1,18 @@
+{
+    "type": "mountainviewthemeresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyMountainviewTheme"
+    },
+    "designerId": "9539f01c-6966-4fe5-a226-0104fd35efba",
+    "storage": {
+        "needsCompile": false,
+        "simple": {},
+        "nameIndex": 1,
+        "varData": {}
+    }
+}

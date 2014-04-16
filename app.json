@@ -25,8 +25,8 @@
             "tablet",
             "desktop"
          ],
-         "theme": "Default",
-         "path": "theme/sencha-touch-99605110-e94e-4979-b885-7a209c428f8d.css",
+         "theme": "Cupertino",
+         "path": "theme/cupertino-f314bc3a-e74a-4142-9668-3d8380d627d9.css",
          "_architect_active_theme": true
       }
    ],

@@ -6,7 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "MyDefaultTheme"
+        "designer|userClassName": "MyCustomTheme"
     },
     "designerId": "99605110-e94e-4979-b885-7a209c428f8d",
     "storage": {
@@ -19,7 +19,7 @@
                     {
                         "name": "base-color",
                         "enabled": true,
-                        "value": "rgba(208,68,25,1)"
+                        "value": "rgba(208,168,25,1)"
                     }
                 ]
             }

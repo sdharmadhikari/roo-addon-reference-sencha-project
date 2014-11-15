@@ -64,6 +64,23 @@
             "codeClass": null,
             "designerId": "beb140d2-a705-4ee0-bb58-c850e2aa8789",
             "masterInstanceId": "e40fe467-c19b-4b74-8e10-171f6769bb1e"
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onEmployeeNavigationViewActiveItemChange",
+                "implHandler": [
+                    "alert('old value : ' + oldValue.xtype);",
+                    "alert('new view : ' + value.xtype);"
+                ],
+                "name": "activeitemchange"
+            },
+            "designerId": "514154e4-d851-4735-af48-ce5bbe6feafe"
         }
     ]
 }

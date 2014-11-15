@@ -1,13 +1,9 @@
-export OUTPUT_DIR=./outputallfiles;
+export OUTPUT_DIR=/Users/sudhir/Projects/trials/spring-roo/addon-roo-sencha/src/main/resources/templates;
 export REPLACE_PATTERN='s/seleroo/${app.name}/g;s/SenchaCrud/${app.name}/g;s/Employee/${entity.name}/g;s/employee/${entity.lowerCase}/g'
+export CURRENT_DIR=`pwd`
 
-mkdir -p $OUTPUT_DIR/app
-mkdir -p $OUTPUT_DIR/app/model
-mkdir -p $OUTPUT_DIR/app/view
-mkdir -p $OUTPUT_DIR/app/controller
-mkdir -p $OUTPUT_DIR/app/store
-mkdir -p $OUTPUT_DIR/app/form
-mkdir -p $OUTPUT_DIR/resources/css
+echo DELETING ORG FILES
+find $OUTPUT_DIR -name '*.js' | grep -v Custom |  xargs rm
 
 for file in $(find app -name '*.js') app.js
 do

@@ -32,7 +32,9 @@ Ext.define('SenchaCrud.controller.EmployeeController', {
                 autoCreate: true,
                 selector: 'list#employeeList',
                 xtype: 'employeeList'
-            }
+            },
+            employeeRefreshButton: 'button#employeeRefreshButton',
+            employeeAddButton: 'button#employeeAddButton'
         },
 
         control: {
@@ -50,6 +52,9 @@ Ext.define('SenchaCrud.controller.EmployeeController', {
             },
             "button#employeeDeleteButton": {
                 tap: 'onEmployeeDeleteButtonTap'
+            },
+            "navigationview#employeeNavigationView": {
+                activeitemchange: 'onEmployeeNavigationViewActiveItemChange'
             }
         }
     },
@@ -146,6 +151,24 @@ Ext.define('SenchaCrud.controller.EmployeeController', {
             }
         });
 
+
+    },
+
+    onEmployeeNavigationViewActiveItemChange: function(container, value, oldValue, eOpts) {
+
+
+        if(value.xtype == 'employeeList') {
+
+           this.getEmployeeRefreshButton().show();
+           this.getEmployeeAddButton().show();
+
+        }
+        if(value.xtype == 'employeeFormPanel') {
+
+            this.getEmployeeRefreshButton().hide();
+            this.getEmployeeAddButton().hide();
+
+        }
 
     }
 

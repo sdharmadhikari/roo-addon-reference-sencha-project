@@ -47,18 +47,7 @@ Ext.define('SenchaCrud.view.EmployeeNavigationView', {
             {
                 xtype: 'employeeList'
             }
-        ],
-        listeners: [
-            {
-                fn: 'onEmployeeNavigationViewActiveItemChange',
-                event: 'activeitemchange'
-            }
         ]
-    },
-
-    onEmployeeNavigationViewActiveItemChange: function(container, value, oldValue, eOpts) {
-        alert('old value : ' + oldValue.xtype);
-        alert('new view : ' + value.xtype);
     }
 
 });

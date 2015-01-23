@@ -7,6 +7,7 @@
     "codeClass": null,
     "userConfig": {
         "autoLoad": true,
+        "autoSync": true,
         "designer|userClassName": "EmployeeJsonPStore",
         "model": "Employee",
         "storeId": "EmployeeJsonPStore"

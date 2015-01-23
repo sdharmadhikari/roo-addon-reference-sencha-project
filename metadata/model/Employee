@@ -48,6 +48,19 @@
                 "name": "version"
             },
             "designerId": "4af7de07-fe3e-48c6-b2e7-0c980b7ba5d8"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "age",
+                "type": "int"
+            },
+            "designerId": "d107d551-a38b-4efa-8983-4ec0fe7f0c5f"
         }
     ]
 }

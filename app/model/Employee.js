@@ -35,6 +35,10 @@ Ext.define('SenchaCrud.model.Employee', {
             },
             {
                 name: 'version'
+            },
+            {
+                name: 'age',
+                type: 'int'
             }
         ]
     }

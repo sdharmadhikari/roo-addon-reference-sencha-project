@@ -26,8 +26,7 @@ Ext.define('SenchaCrud.view.EmployeeList', {
         store: 'EmployeeJsonPStore',
         onItemDisclosure: true,
         itemTpl: [
-            '<div>{[values[Object.keys(values)[0]]]}</div>',
-            ''
+            '<div>{[values[Object.keys(values)[0]]]}</div>'
         ]
     }
 

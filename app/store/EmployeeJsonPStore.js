@@ -24,6 +24,7 @@ Ext.define('SenchaCrud.store.EmployeeJsonPStore', {
 
     config: {
         autoLoad: true,
+        autoSync: true,
         model: 'SenchaCrud.model.Employee',
         storeId: 'EmployeeJsonPStore',
         proxy: {

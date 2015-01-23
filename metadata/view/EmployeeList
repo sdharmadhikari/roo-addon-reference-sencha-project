@@ -24,8 +24,7 @@
             "userConfig": {
                 "designer|displayName": "itemTpl",
                 "implHandler": [
-                    "<div>{[values[Object.keys(values)[0]]]}</div>",
-                    ""
+                    "<div>{[values[Object.keys(values)[0]]]}</div>"
                 ]
             },
             "designerId": "21c3d24b-f4dd-4e91-ae2c-4dd47be5c043"

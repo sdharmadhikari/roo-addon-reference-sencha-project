@@ -10,7 +10,7 @@
     },
     "designerId": "73e62052-140e-4038-9be2-d79b7aa437fb",
     "storage": {
-        "needsCompile": false,
+        "needsCompile": true,
         "simple": {},
         "nameIndex": 1,
         "varData": {}
